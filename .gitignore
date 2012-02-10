@@ -2,3 +2,5 @@ htmls/*
 pages/*
 cache/*
 *.pyc
+*.log
+*.ini

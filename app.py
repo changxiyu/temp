@@ -144,8 +144,8 @@ def static(filename):
 def error_404():
     return "404"
 
-app = SessionMw(app)
+application = SessionMw(app)
 
 if __name__ == '__main__':
     #bottle.debug(True)
-    run(app, host='localhost', port=8000, reloader=True)
+    run(application, host='localhost', port=8000, reloader=True)

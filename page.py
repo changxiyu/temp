@@ -162,8 +162,8 @@ class Page(object):
         if self.need_publish:
             meta, body = self.md
             html = markdown.markdown(body, self.options)
-            self._write_html(html)
             self._write_mongo(meta)
+            self._write_html(html)
 
     def save(self):
         self._write_md(self.content)

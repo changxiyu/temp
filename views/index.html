@@ -1,0 +1,13 @@
+<%inherit file="base.html"/>
+<div class="page_list">
+% for page in page_list:
+<article class="page">
+<div class="page_title">
+    <h1>${page.html_meta.get('title')}</h1>
+    <p>Posted on ${page.html_meta.get('date').strftime('%c')}</p>
+</div>
+<p class="page_summary">${page.summary}</p>
+<a href="/page/${page.name}" class="read_on">Read on -></a>
+</article>
+% endfor
+</div>

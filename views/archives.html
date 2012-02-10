@@ -1,0 +1,14 @@
+<%inherit file="base.html"/>
+<div class="page">
+% for year, item in pages.items():
+<section class="year">
+<h1>${year}</h1>
+% for day, page in item:
+<div class="page_day">
+    <h2>${day}</h2>
+    <h1><a href="/page/${page.name}">${page.html_meta.get('title')}</a></h1>
+</div>
+% endfor
+</section>
+% endfor
+</div>

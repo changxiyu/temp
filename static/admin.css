@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif;
+    vertical-align: baseline;
+}
+html {
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+body {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    color: #333;
+}
+body > header {
+    background-color: #F7F7F7;
+    border-radius: 1em;
+}
+body > header > nav {
+    padding: .35em 55px;
+    background-color: #CCC;
+    border-radius: .1em .1em .8em .8em;
+}
+body > header > nav ul {
+    display: block;
+}
+body > header > nav ul li {
+    display: inline;
+    list-style-image: none;
+    list-style-type: none;
+}
+body > header > nav a {
+    color: #6B6B6B;
+    text-shadow: #EBEBEB 0 1px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: .1em 1em;
+    line-height: 1.5em;
+}
+body > header > nav a:hover {
+    color: #3A3B3D
+}
+
+#container {
+    position: relative;
+    margin: 15px 0;
+    font-size: 15px;
+}
+#container > aside {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 290px;
+    border-radius: .8em;
+    background-color: #F7F7F7;
+}
+#main {
+    width: 690px;
+    padding: 30px 55px;
+    border-radius: .8em;
+    background-color: #F7F7F7;
+}
+#content {
+    width: 690px;
+    height: 600px;
+    border: 0 none;
+    background-color: #333;
+    color: #E6E6E6;
+    font-size: 15px;
+}
+.entry {
+    padding: 20px 0;
+    border-top: 1px dashed #999;
+}
+.entry h1 {
+    font-size: 1.2em;
+    color: #666;
+}
+.entry_date {
+    font-size: .5em;
+    color: #999;
+}
+.entry_action {
+    font-size: .8em;
+    padding-top: 10px;
+}
+.entry_action a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+body > footer {
+    background-color: #F7F7F7;
+    border-radius: .1em .1em 1em 1em;
+    border-top: 1px solid #EEE;
+    margin-bottom: 30px;
+    padding: .5em 55px;
+    color: #888;
+    font-size: .8em;
+    text-shadow: #D9D9D9 0 1px;
+}
+body > footer a {
+    color: #666;
+    margin-left: .5em;
+}

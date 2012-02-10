@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+    <link rel="stylesheet" type="text/css" href="/static/pygments.css" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <%include file="header.html"/>
+    </header>
+    <div id="container">
+        <aside>
+            <%include file="aside.html"/>
+        </aside>
+        ${self.body()}
+    </div>
+    <footer>
+        <%include file="footer.html"/>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login - Changxi Yu's blog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+</head>
+<body>
+    <div class='login_form'>
+        <h1>登陆</h1>
+        <form action="/login?next=${next}" method="POST">
+            <input type="text" name="username" />
+            <input type="password" name="password" />
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <footer>
+        <%include file="footer.html"/>
+    </footer>
+</body>
+</html>

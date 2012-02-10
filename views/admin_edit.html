@@ -1,0 +1,40 @@
+<%inherit file="base_admin.html"/>
+<div id="main">
+    <p style="color: red"></p>
+    <form action="/admin/edit" method="post">
+      <textarea id="content">${page.content}</textarea>
+      <input id="name" type="hidden" name="name" value="${page.name}" />
+      <a href="javascript:;" id="action_save">保存</a>
+      <a href="javascript:;" id="action_publish">发布</a>
+    </form>
+</div>
+<script type="text/javascript" src="http://teddevito.com/demos/js/jquery.textarea.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("textarea#content").tabby();
+
+    $("#action_save").click(function() {
+        var url = "/admin/ajax/save";
+        var name = $("#name").val();
+        var content = $("#content").val();
+        $.post(url, {name: name, content: content}, function(data) {
+            if (data.status == "ok") {
+                alert("保存成功！");
+            } else {
+                alert("发生错误: "+data.data);
+            }
+        }, 'json')
+    });
+    $("#action_publish").click(function() {
+        var url = "/admin/ajax/publish";
+        var name = $("#name").val();
+        $.post(url, {name: name}, function(data) {
+            if (data.status == "ok") {
+                alert("发布成功！");
+            } else {
+                alert("发生错误: "+data.data);
+            }
+        }, 'json')
+    });
+});
+</script>

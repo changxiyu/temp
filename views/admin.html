@@ -1,0 +1,20 @@
+<%inherit file="base_admin.html"/>
+<div id="main">
+% for page in pages:
+<% meta = page.md[0] %>
+<div class="entry">
+  <h1>
+    ${meta.get('title')}
+    % if page.need_publish:
+    <span style="padding-left:10px;font-size:1em;color: red">待发布</span>
+    % endif
+  </h1>
+  <p class="entry_date">${meta.get('date')}</p>
+  <p class="entry_action">
+    <a target="_blank" href="/admin/edit/${page.name}">Edit</a>
+    <a href="javascript:;">删除</a>
+    <a href="javascript:;">彻底删除</a>
+  </p>
+</div>
+% endfor
+</div>

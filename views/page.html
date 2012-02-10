@@ -1,0 +1,8 @@
+<%inherit file="base.html"/>
+<article class="page">
+<div class="page_title">
+    <h1>${page.html_meta.get('title')}</h1>
+    <p>Posted on ${page.html_meta.get('date').strftime('%c')}</p>
+</div>
+${page.html}
+</article>

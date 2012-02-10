@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif;
+    vertical-align: baseline;
+}
+html {
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+body {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    color: #333;
+}
+body > header {
+    background-color: #F7F7F7;
+    border-radius: 1em;
+}
+body > header > hgroup {
+    padding: 55px;
+}
+body > header > hgroup h1 {
+    font-size: 2.2em;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+body > header > hgroup h1 a, header > hgroup h1 a:hover {
+    font-size: 2.2em;
+    color: #333;
+    text-decoration: none;
+}
+body > header > nav {
+    padding: .35em 55px;
+    background-color: #CCC;
+    border-radius: .1em .1em .8em .8em;
+}
+body > header > nav ul {
+    display: block;
+}
+body > header > nav ul li {
+    display: inline;
+    list-style-image: none;
+    list-style-type: none;
+}
+body > header > nav a {
+    color: #6B6B6B;
+    text-shadow: #EBEBEB 0 1px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: .1em 1em;
+    line-height: 1.5em;
+}
+body > header > nav a:hover {
+    color: #3A3B3D
+}
+
+#container {
+    position: relative;
+    margin: 15px 0;
+    font-size: 15px;
+}
+#container > aside {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 290px;
+    border-radius: .8em;
+    background-color: #F7F7F7;
+}
+.page_list {
+    width: 690px;
+    background-color: #F7F7F7;
+    border-radius: .8em;
+    min-height: 100px;
+}
+.page {
+    width: 690px;
+    min-height: 100px;
+    padding: 30px 55px;
+    border-radius: .8em;
+    background-color: #F7F7F7;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+}
+.page > p {
+    margin: 10px 0;
+}
+.page > h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.page > h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.page > h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 12px 0;
+}
+.page > h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+.page > h5 {
+    font-size: .8em;
+    font-weight: bold;
+}
+.page > h6 {
+    font-size: .5em;
+    font-weight: bold;
+}
+.page ul {
+    padding-left: 1em;
+}
+.page_title {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+.page_title h1 {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.page_title p {
+    margin-left: 10px;
+    font-size: .8em;
+    color: #888;
+}
+.page_summary {
+    margin-bottom: 20px;
+}
+a.read_on {
+    display: inline-block;
+    background-color: #EBEBEB;
+    padding: .4em .8em;
+    color: #666;
+    margin-top: 20px;
+    text-decoration: none;
+}
+a.read_on:hover {
+    background-color: #1863A1;
+    color: #FFF;
+}
+
+.year {
+    border-top: 1px dashed #999;
+    position: relative;
+}
+.year > h1 {
+    color: #999;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.page_day {
+    position: relative;
+    margin: 15px 0 15px 80px;
+}
+.page_day > h2 {
+    color: #999;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page_day > h1 {
+    padding-left: 80px;
+    font-size: 1.4em;
+}
+.page_day > h1 a {
+    color: #333;
+    text-decoration: none;
+}
+.page_day > h1 a:hover {
+    color: #1863A1;
+}
+
+aside > .plugin {
+    padding: 10px;
+}
+#recent_posts h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#recent_posts a {
+    font-size: 1em;
+    color: #666;
+    display: block;
+    margin: 5px 0
+}
+#recent_posts a:hover {
+    color: #1863A1;
+}
+
+.login_form {
+    width: 800px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #F7F7F7;
+    border-radius: 1em;
+}
+.login_form h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login_form form {
+    width: 300px;
+    margin: 0 auto;
+}
+.login_form input {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid ##F7F7F7;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+body > footer {
+    background-color: #F7F7F7;
+    border-radius: .1em .1em 1em 1em;
+    border-top: 1px solid #EEE;
+    margin-bottom: 30px;
+    padding: .5em 55px;
+    color: #888;
+    font-size: .8em;
+    text-shadow: #D9D9D9 0 1px;
+    clear: both;
+}
+body > footer a {
+    color: #666;
+    margin-left: .5em;
+}

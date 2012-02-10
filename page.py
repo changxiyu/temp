@@ -36,7 +36,7 @@ tags: {tags}
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 conn = pymongo.Connection('localhost', 27017)
-db   = conn.page
+db   = conn.blog
 
 class Page(object):
     pagedir = PAGEDIR
@@ -129,7 +129,11 @@ class Page(object):
         meta['name'] = self.name
         meta['date'] = datetime.strptime(meta['date'], TIME_FORMAT)
         meta['tags'] = [tag.strip() for tag in meta['tags'].split(',')]
-        db.posts.find_and_modify({'name': self.name}, meta, True)
+        if db.posts.find({'name': self.name}).count():
+            db.posts.update({'name': self.name}, \
+                {'$set': {'date': meta['date'], 'tags': meta['tags']}})
+        else:
+            db.posts.insert(meta)
     
     def _new(self, d=None):
         if d is None: 

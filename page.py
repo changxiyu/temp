@@ -36,7 +36,7 @@ tags: {tags}
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 conn = pymongo.Connection('localhost', 27017)
-db   = conn.page
+db   = conn.blog
 
 class Page(object):
     pagedir = PAGEDIR
@@ -158,8 +158,8 @@ class Page(object):
         if self.need_publish:
             meta, body = self.md
             html = markdown.markdown(body, self.options)
-            self._write_html(html)
             self._write_mongo(meta)
+            self._write_html(html)
 
     def save(self):
         self._write_md(self.content)

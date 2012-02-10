@@ -148,6 +148,7 @@ application = SessionMw(app)
 
 if __name__ == '__main__':
     #bottle.debug(True)
-    from gevent import monkey
+    '''from gevent import monkey
     monkey.patch_all()
-    run(app, host='localhost', port=8000, server='gevent', reloader=True)
+    run(app, host='localhost', port=8000, server='gevent', reloader=True)'''
+    run(app, host='localhost', port=8000, reloader=True)

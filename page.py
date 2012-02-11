@@ -201,7 +201,7 @@ class Utils(object):
                 name = name[:-3]
                 yield Page(name)
 
-USERNAME = 'a5410ee37744c574ba5790034ea08f79'
+USERNAME = '900150983cd24fb0d6963f7d28e17f72'
 PASSWORD = 'e10adc3949ba59abbe56e057f20f883e'
 
 class Validator(object):

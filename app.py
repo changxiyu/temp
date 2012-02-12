@@ -47,7 +47,7 @@ def archive(year, month):
 
 @app.get('/tag/<name>')
 def tag(name):
-    page_list = Utils.tag_pages(5)
+    page_list = Utils.tag_pages(name)
     return template('list.html', page_list=page_list)
 
 @app.get('/tags')

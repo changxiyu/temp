@@ -187,10 +187,9 @@ class Utils(object):
     
     @staticmethod
     def tag_pages(tag):
-        cur = db.posts.find()
+        cur = db.posts.find({'tags': tag})
         for meta in cur.sort('date', pymongo.DESCENDING):
-            if tag in meta['tags']:
-                yield Page(meta['name'], meta)
+            yield Page(meta['name'], meta)
     
     @staticmethod
     def md_list():

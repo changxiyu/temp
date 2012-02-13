@@ -129,11 +129,7 @@ class Page(object):
         meta['name'] = self.name
         meta['date'] = datetime.strptime(meta['date'], TIME_FORMAT)
         meta['tags'] = [tag.strip() for tag in meta['tags'].split(',')]
-        if db.posts.find({'name': self.name}).count():
-            db.posts.update({'name': self.name}, \
-                {'$set': {'date': meta['date'], 'tags': meta['tags']}})
-        else:
-            db.posts.insert(meta)
+        db.posts.update({'name': self.name}, {'$set': meta}})
     
     def _new(self, d=None):
         if d is None: 
